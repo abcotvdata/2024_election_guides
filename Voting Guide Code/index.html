@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
         <style>
             html {
             scroll-padding-top: 70px;
@@ -14,82 +15,33 @@
             overflow-y: auto;
             }
          </style>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script defer src="script.js"></script>
+         <script defer src="script_precipitation.js"></script>
+         <script defer src="app.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+         <script src="scroll.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
 
     </head>
         
     <body class="vsc-initialized">
-        <script src="scroll.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-        <!-- Header -->
-        
+
+        <!-- Header Image -->
         <div class="abovethefold">
-        
-        <!-- <div class="backgroundvid desktop-bg">
-            <img src="navy_blue.jpeg"></img>
-        </div>
-        
-            <div class="backgroundvid mobile-bg">
-                <img src="navy_blue.jpeg"></img>
-            </div> -->
-        <div class="container">
-            <div class="row">
-                <!--<img src="IMAGES/abcnews_yvyv_2024_bold.png">-->
-                <div class="col">
-                    <img src="IMAGES/abcnews_yvyv_2024_bold.png" class="img-fluid" alt="Responsive image">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="IMAGES/abcnews_yvyv_2024_bold.png" class="img-fluid" alt="Responsive image">
+                    </div>
                 </div>
             </div>
         </div>
 
-
-        <!--<div class="titlevid mobile-title">
-            <img src="IMAGES/abcnews_yvyv_2024_bold.png">
-        </div>-->
-        
-        
-            <!--<div class="arrow bounce">    
-                <div class="innerarrow fade-in-image">
-                    <img src="arrow-down.png">
-                </div>
-            </div>-->
-        </div>
-
-    <!--Test Navigation bar 2
-    <nav class="navbar navbar-expand-md sticky-top border-bottom" style="background-color: #e3f2fd;">
-        <div class="container">
-          <a class="navbar-brand d-md-none" href="#">
-            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
-            Aperture
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav flex-grow-1 justify-content-between">
-                <li class="nav-item"><a class="nav-link" href="#">
-                  <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
-                </a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Deadlines</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Candidates</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Issues</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Polling Locations</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">
-                  <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
-                </a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    -->
-      <!--Select your State Collapsable button-->
+      <!--Select your State Collapsible button-->
     <div class="container">
         <div class="row">
             
@@ -214,6 +166,9 @@
             <hr>
             <br>
                 </div>
+
+    
+    
     <!--This section handles the Candidate races tabs, which includes hyperlocal races-->
     <div class="container">
         <div class="row text-center">
@@ -232,7 +187,21 @@
                     </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-house" role="tabpanel" aria-labelledby="nav-house-tab" tabindex="0">
+                    <div class="tab-pane fade show active" id="nav-house" role="tabpanel" aria-labelledby="nav-house-tab" tabindex="0" name="load_data">
+
+                        <!--Testing a responsive table that is populated by a csv file-->
+                        <!--<input type="file" id="file">-->
+                    <table class="table table-hover">
+                    <div text-align="center">
+                    <!--<button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>-->
+                    </div>
+                    <br>
+                    <div id="house_race_table">
+                    </table>
+                        
+
+
+                        <!--This is the sample table, but it is not reading from a file-->
                         <p>content is relevant to a list of House races</p>
                         <table class="table table-hover">
                             <thead>
@@ -277,27 +246,17 @@
                           </table>
                         
                     </div>
-                    <div class="tab-pane fade" id="nav-senate" role="tabpanel" aria-labelledby="nav-senate-tab" tabindex="0">This content is relevant to a list of Senate races</div>
+                    <div class="tab-pane fade" id="nav-senate" role="tabpanel" aria-labelledby="nav-senate-tab" tabindex="0">
+                        
+                        
+                        This content is relevant to a list of Senate races</div>
                     <div class="tab-pane fade" id="nav-judiciary" role="tabpanel" aria-labelledby="nav-judiciary-tab" tabindex="0">This content is relevant to a list of Judiciary races</div>
                     <div class="tab-pane fade" id="nav-county" role="tabpanel" aria-labelledby="nav-county-tab" tabindex="0">This content is relevant to a list of County races</div>
                     <div class="tab-pane fade" id="nav-police" role="tabpanel" aria-labelledby="nav-police-tab" tabindex="0">This content is relevant to a list of Police races</div>
                     <div class="tab-pane fade" id="nav-school" role="tabpanel" aria-labelledby="nav-school-tab" tabindex="0">This content is relevant to a list of School races</div>
                     </div>
                 </nav>
-                <!--<div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Choose a Race
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><button class="dropdown-item" type="button">Senate</button></li>
-                        <li><button class="dropdown-item" type="button">House</button></li>
-                        <li><button class="dropdown-item" type="button">Judiciary</button></li>
-                        <li><button class="dropdown-item" type="button">Police Department</button></li>
-                        <li><button class="dropdown-item" type="button">School Board</button></li>
-                    </ul>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo in reprehenderit aspernatur inventore fugit sequi quod voluptates neque sit harum, quaerat facere, illum nihil corrupti? Eligendi necessitatibus maxime odio repellat!</p>
-                -->
+
             </div>
                         <div class="col-2"></div>
                     </div>
@@ -322,7 +281,7 @@
 
 
                                     
-                                    <li><button class="dropdown-item" type="button" data-bs-toggle="tab" data-bs-target="#dropdown-prop1">Prop #2</button></li>
+                                    <li><button class="dropdown-item nav-link" type="button" data-bs-toggle="tab" data-bs-target="#dropdown-prop1">Prop #2</button></li>
                                     <li><button class="dropdown-item" type="button">Prop #3</button></li>
                                     <li><button class="dropdown-item" type="button">Prop #4</button></li>
                                 </ul>
@@ -433,141 +392,53 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <h5 class="card-title">Key Election Dates</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>-->
                 </div>
             </div>
     </div>
     <hr>
     </div>
-    <br>
-    <div class="sticky sw3-center w3-light-grey w3-round w3-display-bottom w3-hide-small" style="max-width:1500px; text-align:center; display:inline;">
-    <div class="w3-content1 w3-center w3-round w3-light-grey w3-hide-small">
-      <a href="#deadlines" class="w3-bar-item w3-button">Key Election Dates</a>
-      <a href="#candidates" class="w3-bar-item w3-button">Candidates</a>
-      <a href="#issues" class="w3-bar-item w3-button">Issues</a>
-      <a href="#voting_locations" class="w3-bar-item w3-button">Voting Locations</a>
-    </div>
-
-    </div>
-    
-    <!-- Navbar on small screens 
-    <div class="sticky w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-      <a href="#deadlines" class="w3-bar-item w3-button">Deadlines</a>
-      <a href="#candidates" class="w3-bar-item w3-button">Candidates</a>
-      <a href="#issues" class="w3-bar-item w3-button">Issues</a>
-      <a href="#voting_locations" class="w3-bar-item w3-button">Voting Locations</a>
-    </div>
-    -->
-    
-    <!-- precipitation totals -->
-    
-    <div class="container">
-    
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
-    
-      </div>   
-    
-      <div id="candidates"></div><br><br>
-    
-      <h1 class="MAPtitle w3-xxlarge" style="text-align:center;">Candidates</h1>
-      <br><br>
-      
-      <div class="dropdown1">
-          <button onclick="myFunction1()" class="dropbtn1">Choose a race: ▼</button>
-          <div id="myDropdown1" class="dropdown-content1 show1">
-              <div class="countydrop1" style="cursor: pointer;">
-      
-            <p class="State Senate" numb1="0">State Senate</p><p class="State Assembly" numb1="1">State Assembly</p><p class="Etc." numb1="2">Etc.</p></div>
-          </div>
-        </div>
-    
-    
-    <div class="MAPiframe1 evac_tables container w3-content2 w3-center" width="100%" height="900px">
-      <iframe src="https://datawrapper.dwcdn.net/3miUX/2/" width="100%" height="800px" frameborder="0" scrolling="no" style="height: 462px;"></iframe>
-    </div>
-    <!-- snowpack tables -->
-    
-    <div class="belowthefold">
-    <div class="container w3-content w3-padding-large w3-margin-top">
-    
-      <div id="issues"></div><br><br>
-    
-      <h1 class="MAPtitle w3-xxlarge" style="text-align:center;">Issues</h1>
-      <br>
-    
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
-      <br><br>
-      
-      </div>
-      
-      <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Choose an issue: ▼</button>
-          <div id="myDropdown" class="dropdown-content">
-             <!-- <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> -->
-              <div class="countydrop" style="cursor: pointer;">
-      
-            <p class="Props" numb="0">Props</p><p class="Etc." numb="1">Etc.</p></div>
-          </div>
-        </div>
-    
-        <div class="MAPiframe evac_tables container w3-content2 w3-center" width="100%" height="900px">
-          <iframe src="https://datawrapper.dwcdn.net/kwdm4/1/" width="100%" height="800px" frameborder="0" scrolling="no" style="height: 349px;"></iframe>
-        </div>
-        <br><br>
-      </div>
-    
-    <!-- drought map -->
-    
-    <div class="container w3-content w3-padding-large w3-margin-top">
-    
-      <div id="voting_locations"></div><br><br>
-    
-      <h1 class="MAPtitle w3-xxlarge" style="text-align:center;">Voting Locations</h1>
-      <br>
-    
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      
-      </div>
-    
-    <div class="container w3-content w3-padding-large w3-margin-top w3-center" id="transmission">
-    <div class="transmission">
-     <iframe class="iframe-shortcode" src="https://flo.uri.sh/visualisation/6196047/embed"></iframe>
-      <i>Having trouble seeing the chart above? <a href="https://abcotvdata.github.io/drought-maps/ca_drought_map.html" target="_blank" rel="nofollow">click here to view it in a new window.</a></i> 
-    </div>
-    </div>
-    
-    <div class="container w3-content2 w3-padding-large w3-margin-top w3-center">
-      <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-      </script>
-    </div>
-    
-    <!-- page last updated -->
-    <br><br>
-    
-    <p style="text-align:left; padding-left:10%;padding-right:10%;padding-top:5%;padding-bottom:2%; font-size: smaller; color: grey;"><i>This page was created by Lindsey Feingold.</i></p>
+   <i>This page was created by Lindsey Feingold.</i></p>
     
     <!-- End page content -->
+    </body>
+    </html>
+
+
+<!--Javascript, AJAX and Jquery to load document-->
     
-    
-    
-    <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
-    <script src="script_precipitation.js"></script>
-    
-    
-    </body></html>
+    <script>
+        $(document).ready(function(){
+         $('#nav-house-tab').click(function(){
+            $("#div1").load("US_House_IL_Districts.csv");
+          $.ajax({
+           url: "US_House_IL_Districts.csv",
+           dataType:"text",
+           success:function(data)
+           {
+            var employee_data = data.split(/\r?\n|\r/);
+            var table_data = '<table class="table table-bordered table-striped">';
+            for(var count = 0; count<employee_data.length; count++)
+            {
+             var cell_data = employee_data[count].split(",");
+             table_data += '<tr>';
+             for(var cell_count=0; cell_count<cell_data.length; cell_count++)
+             {
+              if(count === 0)
+              {
+               table_data += '<th>'+cell_data[cell_count]+'</th>';
+              }
+              else
+              {
+               table_data += '<td>'+cell_data[cell_count]+'</td>';
+              }
+             }
+             table_data += '</tr>';
+            }
+            table_data += '</table>';
+            $('#house_race_table').html(table_data);
+           }
+          });
+         });
+         
+        });
+        </script>
