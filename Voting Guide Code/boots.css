@@ -5,3 +5,62 @@ a[id]:before {
     height: 285px; 
     visibility: hidden; 
   }
+
+body{
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+} 
+
+header{
+  padding: 5px;
+}
+
+/*above the fold styling*/
+
+.abovethefold {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
+/*______________________________MEDIA QUERIES______________________________*/
+
+@media only screen and (max-width: 506px) {
+  .body {
+      padding: 20px;
+  } }
+  
+  @media only screen and (max-width: 850px) {
+  .body {
+      padding: 30px;
+  } }
+
+  .ratio {
+    height: 800px;
+  } 
+  
+  .ratio {
+    height: 800px;
+  } 
+  
+  @media only screen and (max-width: 506px) {
+  .ratio {
+      height: 1100px;
+  } }
+  
+  @media only screen and (max-width: 850px) {
+  .ratio {
+      height: 900px; 
+  } }
+  
+  @media only screen and (max-width: 506px) {
+    .ratio {
+        height: 1100px;
+    } }
+    
+    @media only screen and (max-width: 850px) {
+    .ratio {
+        height: 900px; 
+    } }
