@@ -13,6 +13,7 @@
             }
         
             body {
+            font-size: 1rem;
             position: relative;
             overflow-y: auto;
             }
@@ -42,6 +43,7 @@
                 </div>
             </div>
         </div>
+        
 
       <!--Select your State Collapsible button-->
     <div class="container">
@@ -61,7 +63,7 @@
     
 
     <!-- Navbar -->
-    <div class="sticky-md-top">
+    <div class="container-fluid sticky-md-top">
         <nav id="navbar-main" class="card text-center">
          
             <div class="card-header">
@@ -125,7 +127,7 @@
                 </ul>
             </div> 
         </nav>
-    </div>
+        </div>
 
     <div class="container">
 
@@ -146,7 +148,7 @@
                         
                     <div class="row text-center">
                         <h2 id="Deadlines">Deadlines</h2>
-                        <div class="col">
+                        <div class="col-md">
                             
                             <!--Empty column for formatting the card-->
                             <div class="card text-center">
@@ -157,7 +159,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md">
                             <div class="card text-center">
                                 <div class="card-body">
                                     <h5 class="card-title">Key Election Dates</h5>
@@ -166,7 +168,7 @@
                                 </div>
                             </div>
                         </div>
-                            <div class="col">
+                            <div class="col-md">
                                 <!--Empty column for formatting the card-->
                                 <div class="card text-center">
                                     <div class="card-body">
@@ -194,10 +196,10 @@
     
     
     <!--This section handles the Candidate races tabs, which includes hyperlocal races-->
-    <div class="container">
+    <div class="container mt-5">
         <div class="row text-center">
-            <div class="col-2"></div>
-            <div class="col-8">
+            <div class="col-2 md"></div>
+            <div class="col-8 md">
                 <h2 id="Candidates">Candidates</h2>
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -211,23 +213,20 @@
                     </div>
                     </nav>
                     
-                    <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-house" role="tabpanel" aria-labelledby="nav-house-tab" tabindex="0" name="load_data">
+                    <div class="container mt-5 tab-content">
+                    <div class="tab-pane fade show active" id="nav-house" role="tabpanel" aria-labelledby="nav-house-tab" tabindex="0" name="load_data"></div>
 
                         <!--Testing a responsive table that is populated by a csv file-->
                         <!--<input type="file" id="file">-->
-                    <table class="table table-hover">
-                    <div text-align="center">
-                    <!--<button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>-->
-                    </div>
+                   <table class="table table-striped table-bordered" id="house_race_table">
                     <br>
-                    <div id="house_race_table">
                     </table>
-                        
+
 
 
                         <!--This is the sample table, but it is not reading from a file-->
                         <p>content is relevant to a list of House races</p>
+                        
                         <table class="table table-hover">
                             <thead>
                               <tr>
@@ -269,6 +268,7 @@
                               </tr>
                             </tbody>
                           </table>
+                          </div>
                         
                     </div>
                     <div class="tab-pane fade" id="nav-senate" role="tabpanel" aria-labelledby="nav-senate-tab" tabindex="0">
@@ -289,7 +289,7 @@
                 <!-- Container for the Issues section, including a drop down to select the most important issues in that  -->
                 <br>
 
-                <div class="container">
+                <div class="container mt-5">
 
                     <br>
                   
@@ -301,7 +301,7 @@
                   
                     </div>   
 
-                <div class="container text-center">
+                <div class="container text-center mt-5">
                     <div class="row">
                         <div class="col-2"></div>
                         <div class="col-8">
@@ -378,7 +378,7 @@
                     </div>
                 </div>
 
-                <div class="container">
+                <div class="container mt-5">
 
                     <br><br>
                   
@@ -411,42 +411,8 @@
    <i>This page was created by Adriana Aguilar and Lindsey Feingold.</i></p>
     
     <!-- End page content -->
+    <script src="buildTable.js"></script>
     </body>
     </html>
     
-    <script charset="utf-8">
-        $(document).ready(function(){
-         $('#nav-house-tab').click(function(){
-            $("#div1").load("US_House_IL_Districts.csv");
-          $.ajax({
-           url: "US_House_IL_Districts.csv",
-           dataType:"text",
-           success:function(data)
-           {
-            var employee_data = data.split(/\r?\n|\r/);
-            var table_data = '<table class="table table-bordered table-striped">';
-            for(var count = 0; count<employee_data.length; count++)
-            {
-             var cell_data = employee_data[count].split(",");
-             table_data += '<tr>';
-             for(var cell_count=0; cell_count<cell_data.length; cell_count++)
-             {
-              if(count === 0)
-              {
-               table_data += '<th>'+cell_data[cell_count]+'</th>';
-              }
-              else
-              {
-               table_data += '<td>'+cell_data[cell_count]+'</td>';
-              }
-             }
-             table_data += '</tr>';
-            }
-            table_data += '</table>';
-            $('#house_race_table').html(table_data);
-           }
-          });
-         });
-         
-        });
-        </script>
+   
