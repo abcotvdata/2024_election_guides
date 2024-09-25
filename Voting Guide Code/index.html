@@ -4,23 +4,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script src="scroll.js" charset="utf-8"></script>
-        <link rel="stylesheet" href="boots.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="boots.css">
 
-        <style>
-            html {
-            scroll-padding-top: 70px;
-            }
-        
-            body {
-            font-size: 1rem;
-            position: relative;
-            overflow-y: auto;
-            }
-         </style>
+
          <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
          <script defer src="script.js"></script>
-         <script defer src="script_precipitation.js"></script>
          <script defer src="app.js"></script>
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
@@ -31,103 +20,102 @@
 
     </head>
         
-    <body class="vsc-initialized">
+    <body class="vsc-initialized mt-0">
 
-        <!-- Header Image -->
-        <div class="abovethefold">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img src="IMAGES/abcnews_yvyv_2024_bold.png" class="img-fluid" alt="Responsive image">
+
+            <!-- Header Image -->
+            <div class="abovethefold">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col p-0">
+                            <img src="IMAGES/YVYV_2024_header_smaller-01.png" class="img-fluid" alt="Responsive image">
+                        </div>
                     </div>
+                </div>
+            </div>
+            
+    
+          <!--Select your Owned Station Collapsible button-->
+        <div class="container">
+            <div class="row">
+                
+                <div class="col">
+    
+                </div>
+                <div class="col">
+            
+                </div>
+                <div class="col">
+    
                 </div>
             </div>
         </div>
         
-
-      <!--Select your State Collapsible button-->
-    <div class="container">
-        <div class="row">
-            
-            <div class="col">
-
-            </div>
-            <div class="col">
-        
-            </div>
-            <div class="col">
-
-            </div>
-        </div>
-    </div>
     
-
-    <!-- Navbar -->
-    <div class="container-fluid sticky-md-top">
-        <nav id="navbar-main" class="card text-center">
-         
-            <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs justify-content-center">
-                    <li>
-                        <nav class="navbar navbar-light bg-light">
-                            <div class="container-fluid">
-                              <a class="navbar-brand" href="#"></a>
-                              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                              </button>
-                              <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                                <div class="offcanvas-header">
-                                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
-                                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Select Your State
-                                      </a>
-                                      <ul class="dropdown-menu dropdown-menu-light">
-                                        <li><a class="dropdown-item" href="#">California</a></li>
-                                        <li><a class="dropdown-item" href="#">Illinois</a></li>
-                                        <li>
-                                        <li><a class="dropdown-item" href="#">Pennsylvania</a></li>
-                                        <li>
-                                        <li><a class="dropdown-item" href="#">New York</a></li>
-                                        <li>
-                                        <li><a class="dropdown-item" href="#">North Carolina</a></li>
-                                        <li><a class="dropdown-item" href="#">Houston</a></li>
-                                        <li> 
-                                          <!--<hr class="dropdown-divider">-->
+        <!-- Navbar -->
+        <div class="container-fluid sticky-md-top p-0">
+            <nav id="navbar-main" class="card text-center">
+             
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs justify-content-center">
+                        <li>
+                            <nav class="navbar navbar-light bg-light">
+                                <div class="container-fluid">
+                                  <a class="navbar-brand" href="#"></a>
+                                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+                                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                      <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Select Your ABC Owned Station
+                                          </a>
+                                          <ul class="dropdown-menu dropdown-menu-light">
+                                            <li><a class="dropdown-item text-center" href="#">New York</a></li>
+                                            <li><a class="dropdown-item text-center" href="#">Los Angeles</a></li>
+                                            <li><a class="dropdown-item text-center" href="#">Chicago</a></li>
+                                            <li><a class="dropdown-item text-center" href="#">Philadelphia</a></li>
+                                            <li><a class="dropdown-item text-center" href="#">Houston</a></li>
+                                            <li><a class="dropdown-item text-center" href="#">San Francisco</a></li>
+                                            <li><a class="dropdown-item text-center" href="#">Raleigh</a></li>    
+                                            <li><a class="dropdown-item text-center" href="#">Fresno</a></li>                                              <!--<hr class="dropdown-divider">-->
+                                            </li>
+                                          </ul>
                                         </li>
                                       </ul>
-                                    </li>
-                                  </ul>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                            </div>
-                          </nav>
-
-                    </li>
-                    <li class="nav-item"> 
-                    <a class="nav-link" href="#Deadlines">Deadlines</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Candidates">Candidates</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Issues">Issues</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Voting Locations">Polling Locations</a>
-                    </li>
-                    <li class="nav-item">
-                </ul>
-            </div> 
-        </nav>
-        </div>
+                              </nav>
+    
+                        </li>
+                        <li class="nav-item my-auto"> 
+                        <a class="nav-link" href="#Deadlines">Deadlines</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="#Candidates">Candidates</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="#Issues">Issues</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="#Voting Locations">Polling Locations</a>
+                        </li>
+                        <li class="nav-item">
+                    </ul>
+                </div> 
+            </nav>
+            </div>
+   
 
     <div class="container">
 
@@ -179,7 +167,7 @@
                                 </div>
                             </div>
                     </div>
-            <hr>
+            <br>
             <br>
                 </div>
                 
@@ -190,8 +178,6 @@
                   
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               
-                    <br>
-                  
                     </div>   
     
     
@@ -223,54 +209,6 @@
                     </table>
 
 
-
-                        <!--This is the sample table, but it is not reading from a file-->
-                        <p>content is relevant to a list of House races</p>
-                        
-                        <table class="table table-hover">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">
-                                    <!--SVG class is for the rounded placeholder image for the candidates-->
-                                    <svg class="bd-placeholder-img rounded-circle" width="70" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                        <image href="/IMAGES/abcnews_yvyv_2024_bold.png" height="70" width="70"/>
-                                        <title>Placeholder</title>
-                                        <!--<rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>-->
-                                    </svg></th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                    <svg class="bd-placeholder-img rounded-circle" width="70" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                        <title>Placeholder</title>
-                                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)">
-                                        </rect>
-                                    </svg>
-                                </th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                              </tr>
-                              <tr>
-                                <th scope="row"><svg class="bd-placeholder-img rounded-circle" width="70" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg></th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          </div>
-                        
-                    </div>
                     <div class="tab-pane fade" id="nav-senate" role="tabpanel" aria-labelledby="nav-senate-tab" tabindex="0">
                         
                         
@@ -291,13 +229,11 @@
 
                 <div class="container mt-5">
 
-                    <br>
                   
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               
-                    <br>
                   
                     </div>   
 
@@ -379,8 +315,6 @@
                 </div>
 
                 <div class="container mt-5">
-
-                    <br><br>
                   
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   
@@ -394,8 +328,8 @@
                     <div class="row">
                         <div class="col">
                             <!--Empty column for formatting the card-->
-                            <div class="card text-center">
-                                <div class="card-body">
+                            <div class="text-center">
+                                <div class="map-card-body">
                                     <h2 class="card-title" id="Voting Locations">Polling Locations</h2>
                                     <br>
                                 <div class= "ratio ratio-16x9"><iframe src="chicago_polling_map.html" title="Polling Places" allowfullscreen></iframe></div>
@@ -403,13 +337,13 @@
                                 </div>
                             </div>
                         </div>
-                </div>
-            </div>
+                        <br>
+                        <br>
+                        <br>
+                        <i>This page was created by Adriana Aguilar and Lindsey Feingold.</i></p>
+   
     </div>
-    <hr>
-    </div>
-   <i>This page was created by Adriana Aguilar and Lindsey Feingold.</i></p>
-    
+    <br>
     <!-- End page content -->
     <script src="buildTable.js"></script>
     </body>
