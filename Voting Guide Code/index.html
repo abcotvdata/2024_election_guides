@@ -20,7 +20,7 @@
 
     </head>
         
-    <body class="vsc-initialized mt-0">
+    <body class="vsc-initialized mt-0 container-fluid p-0">
 
 
             <!-- Header Image -->
@@ -53,7 +53,7 @@
         
     
         <!-- Navbar -->
-        <div class="container-fluid sticky-md-top p-0">
+        <div class="container-fluid sticky-top p-0">
             <nav id="navbar-main" class="card text-center">
              
                 <div class="card-header">
@@ -137,8 +137,7 @@
                     <div class="row text-center">
                         <h2 id="Deadlines">Deadlines</h2>
                         <div class="col-md">
-                            
-                            <!--Empty column for formatting the card-->
+                            <br>
                             <div class="card text-center">
                                 <div class="card-body">
                                     <h5 class="card-title">Key Election Dates</h5>
@@ -148,6 +147,7 @@
                             </div>
                         </div>
                         <div class="col-md">
+                            <br>
                             <div class="card text-center">
                                 <div class="card-body">
                                     <h5 class="card-title">Key Election Dates</h5>
@@ -157,7 +157,7 @@
                             </div>
                         </div>
                             <div class="col-md">
-                                <!--Empty column for formatting the card-->
+                                <br>
                                 <div class="card text-center">
                                     <div class="card-body">
                                         <h5 class="card-title">Key Election Dates</h5>
@@ -184,11 +184,11 @@
     <!--This section handles the Candidate races tabs, which includes hyperlocal races-->
     <div class="container mt-5">
         <div class="row text-center">
-            <div class="col-2 md"></div>
-            <div class="col-8 md">
+            <div class="col-2-lg"></div>
+            <div class="col-8-lg">
                 <h2 id="Candidates">Candidates</h2>
                 <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                         <button class="nav-link active" id="nav-house-tab" data-bs-toggle="tab" data-bs-target="#nav-house" type="button" role="tab" aria-controls="nav-house" aria-selected="true">House</button>
                         <button class="nav-link" id="nav-senate-tab" data-bs-toggle="tab" data-bs-target="#nav-senate" type="button" role="tab" aria-controls="nav-senate" aria-selected="false">Senate</button>
                         <button class="nav-link" id="nav-judiciary-tab" data-bs-toggle="tab" data-bs-target="#nav-judiciary" type="button" role="tab" aria-controls="nav-judiciary" aria-selected="false">Judiciary</button>
@@ -204,10 +204,8 @@
 
                         <!--Testing a responsive table that is populated by a csv file-->
                         <!--<input type="file" id="file">-->
-                   <table class="table table-striped table-bordered" id="house_race_table">
-                    <br>
+                   <table class="table table-striped table-bordered align-middle" id="house_race_table">
                     </table>
-
 
                     <div class="tab-pane fade" id="nav-senate" role="tabpanel" aria-labelledby="nav-senate-tab" tabindex="0">
                         
@@ -255,7 +253,7 @@
 
 
                                     
-                                    <li><button class="dropdown-item nav-link" type="button" data-bs-toggle="tab" data-bs-target="#dropdown-prop1">Prop #2</button></li>
+                                    <li><button class="dropdown-item" type="button" data-bs-toggle="tab" data-bs-target="#dropdown-prop1">Prop #2</button></li>
                                     <li><button class="dropdown-item" type="button">Prop #3</button></li>
                                     <li><button class="dropdown-item" type="button">Prop #4</button></li>
                                 </ul>
@@ -263,11 +261,11 @@
 
                             <div class="tab-content" id="nav-tab-issues">
                                 <div class="tab-pane fade show active" id="dropdown-prop1" role="tabpanel" aria-labelledby="dropdown-prop1">
-                                    <table class="table">
+                                    <table class="table container-fluid">
                                         <thead>
                                             <tr>
                                             <th scope="col">Prop</th>
-                                            <th scope="col">Description</th>
+                                            <!-- <th scope="col">Description</th> -->
                                             <th scope="col">Argument for</th>
                                             <th scope="col">Argument against</th>
                                             </tr>
@@ -275,11 +273,20 @@
                                         <tbody class="table-group-divider">
                                             <tr>
                                             <th scope="row">Prop #1 - Abortion Amendment</th>
-                                            <td>This measure would amend the California Constitution to prohibit the state from denying or interfering with an individuals' reproductive freedom</td>
+                                            <!-- <td>This measure would amend the California Constitution to prohibit the state from denying or interfering with an individuals' reproductive freedom</td> -->
                                             <td>Prop 1 protects individual choices on reproductive care and the right to choose to have an abortion</td>
                                             <td>keeping medical decisions where they belong—between a patient and their provider.</td>
                                             </tr>
-                                            <tr>
+
+                                            <div class="videobox">
+                                                <div class="iframecontainer">
+                                                    <iframe src=" https://abc7news.com/video/embed/?pid=14854789" scrolling="no"></iframe>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            
+                                            
+                                            <!-- <tr>
                                             <th scope="row">Prop #1 - Abortion Amendment</th>
                                             <td>This measure would amend the California Constitution to prohibit the state from denying or interfering with an individuals' reproductive freedom</td>
                                             <td>Prop 1 protects individual choices on reproductive care and the right to choose to have an abortion</td>
@@ -296,7 +303,7 @@
                                             <td>This measure would amend the California Constitution to prohibit the state from denying or interfering with an individuals' reproductive freedom</td>
                                             <td>Prop 1 protects individual choices on reproductive care and the right to choose to have an abortion</td>
                                             <td>keeping medical decisions where they belong—between a patient and their provider.</td>
-                                            </tr>
+                                            </tr> -->
                                             
                                         </tbody>
                                         </table>
@@ -326,7 +333,6 @@
         
                 <div class="container">
                     <div class="row">
-                        <div class="col">
                             <!--Empty column for formatting the card-->
                             <div class="text-center">
                                 <div class="map-card-body">
@@ -335,7 +341,6 @@
                                 <div class= "ratio ratio-16x9"><iframe src="chicago_polling_map.html" title="Polling Places" allowfullscreen></iframe></div>
                                 </div>
                                 </div>
-                            </div>
                         </div>
                         <br>
                         <br>
