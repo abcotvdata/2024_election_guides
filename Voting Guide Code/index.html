@@ -182,40 +182,97 @@
                     </div>   
     
     
-    <!--This section handles the Candidate races tabs, which includes hyperlocal races-->
+    <!--This section handles the race TABS, which includes hyperlocal races-->
     <div class="container mt-5">
         <div class="row text-center">
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
-                <h2 id="Candidates">Candidates</h2>
+                <h2 id="Candidates">Candidate Races</h2>
                 <nav>
                     <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-house-tab" data-bs-toggle="tab" data-bs-target="#nav-house" type="button" role="tab" aria-controls="nav-house" aria-selected="true">House</button>
-                        <button class="nav-link" id="nav-senate-tab" data-bs-toggle="tab" data-bs-target="#nav-senate" type="button" role="tab" aria-controls="nav-senate" aria-selected="false">Senate</button>
+                        
+                        <button class="nav-link" id="nav-us-president-tab" data-bs-toggle="tab" data-bs-target="#nav-us-president" type="button" role="tab" aria-controls="nav-us-president" aria-selected="true">President</button>
+                        <button class="nav-link" id="nav-us-house-tab" data-bs-toggle="tab" data-bs-target="#nav-us-house" type="button" role="tab" aria-controls="nav-us-house" aria-selected="true">U.S. House</button>
+                        <button class="nav-link" id="nav-IL-house-tab" data-bs-toggle="tab" data-bs-target="#nav-IL-house" type="button" role="tab" aria-controls="nav-IL-house" aria-selected="false">IL House</button>
+                        <button class="nav-link" id="nav-us-senate-tab" data-bs-toggle="tab" data-bs-target="#nav-us-senate" type="button" role="tab" aria-controls="nav-us-senate" aria-selected="false">IL Senate</button>
+                        <button class="nav-link" id="nav-cook-tab" data-bs-toggle="tab" data-bs-target="#nav-cook" type="button" role="tab" aria-controls="nav-cook" aria-selected="false">Cook County</button>
+                        <button class="nav-link" id="nav-lake-tab" data-bs-toggle="tab" data-bs-target="#nav-lake" type="button" role="tab" aria-controls="nav-lake" aria-selected="false">Lake County</button>
+                        <button class="nav-link" id="nav-dupage-tab" data-bs-toggle="tab" data-bs-target="#nav-dupage" type="button" role="tab" aria-controls="nav-dupage" aria-selected="false">DuPage County</button>
+                        <button class="nav-link" id="nav-kane-tab" data-bs-toggle="tab" data-bs-target="#nav-kane" type="button" role="tab" aria-controls="nav-kane" aria-selected="false">Kane County</button>
+                        <button class="nav-link" id="nav-kendall-tab" data-bs-toggle="tab" data-bs-target="#nav-kendall" type="button" role="tab" aria-controls="nav-kendall" aria-selected="false">Kendall County</button>
+                        <button class="nav-link" id="nav-will-tab" data-bs-toggle="tab" data-bs-target="#nav-will" type="button" role="tab" aria-controls="nav-will" aria-selected="false">Will County</button>
                         <button class="nav-link" id="nav-judiciary-tab" data-bs-toggle="tab" data-bs-target="#nav-judiciary" type="button" role="tab" aria-controls="nav-judiciary" aria-selected="false">Judiciary</button>
-                        <button class="nav-link" id="nav-county-tab" data-bs-toggle="tab" data-bs-target="#nav-county" type="button" role="tab" aria-controls="nav-county" aria-selected="false">County</button>
-                        <button class="nav-link" id="nav-police-tab" data-bs-toggle="tab" data-bs-target="#nav-police" type="button" role="tab" aria-controls="nav-police" aria-selected="false">Police Department</button>
-                        <button class="nav-link" id="nav-school-tab" data-bs-toggle="tab" data-bs-target="#nav-school" type="button" role="tab" aria-controls="nav-school" aria-selected="false">School Board</button>
+
                 
                     </div>
                     </nav>
-                    
+                    <!--This section handles the CONTENT in each tab-->
                     <div class="container mt-5 tab-content">
-                    <div class="tab-pane fade show active" id="nav-house" role="tabpanel" aria-labelledby="nav-house-tab" tabindex="0" name="load_data"></div>
+                    <!--<div class="tab-pane fade show active" id="nav-house" role="tabpanel" aria-labelledby="nav-house-tab" tabindex="0" name="load_data"></div>-->
 
-                        <!--Testing a responsive table that is populated by a csv file-->
-                        <!--<input type="file" id="file">-->
-                   <table class="table table-striped table-bordered align-middle" id="house_race_table">
-                    </table>
+                    <!--Testing a responsive table that is populated by a csv file-->
+                   
 
-                    <div class="tab-pane fade" id="nav-senate" role="tabpanel" aria-labelledby="nav-senate-tab" tabindex="0">
-                        
-                        
-                        This content is relevant to a list of Senate races</div>
-                    <div class="tab-pane fade" id="nav-judiciary" role="tabpanel" aria-labelledby="nav-judiciary-tab" tabindex="0">This content is relevant to a list of Judiciary races</div>
-                    <div class="tab-pane fade" id="nav-county" role="tabpanel" aria-labelledby="nav-county-tab" tabindex="0">This content is relevant to a list of County races</div>
-                    <div class="tab-pane fade" id="nav-police" role="tabpanel" aria-labelledby="nav-police-tab" tabindex="0">This content is relevant to a list of Police races</div>
-                    <div class="tab-pane fade" id="nav-school" role="tabpanel" aria-labelledby="nav-school-tab" tabindex="0">This content is relevant to a list of School races</div>
+                    <div class="tab-pane fade" id="nav-us-president" role="tabpanel" aria-labelledby="nav-us-president-tab" tabindex="0">
+                        This content is relevant to a list of U.S. House races
+                        <br><br>
+                        <table class="table table-striped table-bordered align-middle" id="nav-us-president-table"></table>
+                    </div>
+                   <div class="tab-pane fade" id="nav-us-house" role="tabpanel" aria-labelledby="nav-us-house-tab" tabindex="0">
+                        This content is relevant to a list of U.S. House races
+                        <br><br>
+                        <table class="table table-striped table-bordered align-middle" id="nav-us-house-table"></table>
+                   </div>
+                   <div class="tab-pane fade" id="nav-IL-house" role="tabpanel" aria-labelledby="nav-IL-house-tab" tabindex="0">
+                    This content is relevant to a list of IL House races
+                    <br><br>
+                    <table class="table table-striped table-bordered align-middle" id="nav-IL-house-table"></table>
+               </div>
+
+                   <div class="tab-pane fade" id="nav-us-senate" role="tabpanel" aria-labelledby="nav-us-senate-tab" tabindex="0">
+                        This content is relevant to a list of U.S. Senate races
+                        <br><br>
+                        <table class="table table-striped table-bordered align-middle" id="nav-us-senate-table"></table>
+                   </div>
+
+                   <div class="tab-pane fade" id="nav-cook" role="tabpanel" aria-labelledby="nav-cook-tab" tabindex="0">
+                        This content is relevant to a list of Cook County races
+                        <br><br>
+                        <table class="table table-striped table-bordered align-middle" id="nav-cook-table"></table>
+                   </div>
+
+                   <div class="tab-pane fade" id="nav-lake" role="tabpanel" aria-labelledby="nav-lake-tab" tabindex="0">
+                        This content is relevant to a list of Lake County races
+                        <br><br>
+                        <table class="table table-striped table-bordered align-middle" id="nav-lake-table"></table>
+                   </div>
+                   <div class="tab-pane fade" id="nav-dupage" role="tabpanel" aria-labelledby="nav-dupage-tab" tabindex="0">
+                        This content is relevant to a list of Dupage County races
+                        <br><br>
+                        <table class="table table-striped table-bordered align-middle" id="nav-dupage-table"></table>
+                   </div>
+                   <div class="tab-pane fade" id="nav-kane" role="tabpanel" aria-labelledby="nav-kane-tab" tabindex="0">
+                        This content is relevant to a list of Kane County races
+                        <br><br>
+                        <table class="table table-striped table-bordered align-middle" id="nav-kane-table"></table>
+                    </div>
+                   <div class="tab-pane fade" id="nav-kendall" role="tabpanel" aria-labelledby="nav-kendall-tab" tabindex="0">
+                    This content is relevant to a list of Kendall County races
+                    <br><br>
+                        <table class="table table-striped table-bordered align-middle" id="nav-kendall-table"></table>
+                    </div>
+                    <div class="tab-pane fade" id="nav-will" role="tabpanel" aria-labelledby="nav-will-tab" tabindex="0">
+                    This content is relevant to a list of Will County races
+                    <br><br>
+                        <table class="table table-striped table-bordered align-middle" id="nav-will-table"></table>
+                    </div>
+                    <div class="tab-pane fade" id="nav-judiciary" role="tabpanel" aria-labelledby="nav-judiciary-tab" tabindex="0">
+                        This content is relevant to a list of judiciary races
+                        <br><br>
+                            <table class="table table-striped table-bordered align-middle" id="nav-judiciary-table"></table>
+                    </div>
+
+
                     </div>
                 </nav>
 
@@ -352,6 +409,7 @@
     <br>
     <!-- End page content -->
     <script src="buildTable.js"></script>
+    <script src="tableTab.js"></script>
     </body>
     </html>
     

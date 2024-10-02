@@ -13,14 +13,53 @@
   }
 
 .table {
-  overflow-x: hidden!important;
+  overflow-x: auto;
   padding: 15px;
-  table-layout:fixed;
+  table-layout:auto;
   width: 100%;
+  
+}
+.table-cell {
+  max-width: 50px; /* Adjust the max width as needed */
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent wrapping */
+  text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+}
+
+/*Responsiveness of the tables*/
+@media (max-width: 600px) {
+  .table {
+    image-resolution: 80%;
+      font-size: 14px; /* Reduce font size */
+  }
+  .table img {
+    max-width: 65px; /* Set the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Optional: make the image a block element */
+    margin: 0 auto; /* Center the image */
+}
+
+  .table th, .table td {
+      padding: 3px; /* Reduce padding for smaller screens */
+  }
+
+  .table th {
+      display: inside; /* Stack headers */
+      width: 100%; /* Full width for headers */
+  }
+
+  .table td {
+      display: inside; /* Stack table cells */
+      width: 100%; /* Full width for cells */
+      overflow-wrap: break-word; /* Ensure text wraps appropriately */
+  }
 }
 
 .td {
-  overflow-x: hidden!important;
+  overflow: hidden; /* Hides the overflow text */
+  text-overflow: ellipsis; /* Adds ellipsis (...) for overflow text */
+  white-space: nowrap; /* Prevents text from wrapping to a new line */
+  max-width: 150px; /* Set a max width for the cell */
 }
 
 a[id]:before { 
