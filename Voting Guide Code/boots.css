@@ -25,6 +25,20 @@
   white-space: nowrap; /* Prevent wrapping */
   text-overflow: ellipsis; /* Show ellipsis for overflowing text */
 }
+.nav-link{
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f8f9fa; /* Light background */
+    color: #007bff; /* Primary text color */
+}
+.nav-link:hover {
+  background-color: #e2e6ea; /* Darker background on hover */
+}
+
+.nav-link.active {
+  background-color: #007bff; /* Active tab color */
+  color: white; /* Active text color */
+}
 
 /*Responsiveness of the tables*/
 @media (max-width: 600px) {
