@@ -2,6 +2,14 @@
   scroll-padding-top: 70px;
   } */
 
+  /* @font-face {
+    font-family: 'Post Grotesk';
+    src: url('Post Grotesk.ttf') format('truetype');
+ }
+ p {
+   font-family: Post Grotesk;
+ } */
+
   body {
   font-size: 1rem;
   position: relative;
@@ -12,24 +20,16 @@
   overflow-x: hidden!important;
   }
 
-.table {
-  overflow-x: auto;
-  padding: 15px;
-  table-layout:auto;
-  width: 100%;
-  
-}
-.table-cell {
-  max-width: 50px; /* Adjust the max width as needed */
-  overflow: hidden; /* Hide overflow text */
-  white-space: nowrap; /* Prevent wrapping */
-  text-overflow: ellipsis; /* Show ellipsis for overflowing text */
-}
+  p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
 .nav-link{
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: bold;
   background-color: #f8f9fa; /* Light background */
-    color: #007bff; /* Primary text color */
+  color: #007bff; /* Primary text color */
 }
 .nav-link:hover {
   background-color: #e2e6ea; /* Darker background on hover */
@@ -38,6 +38,20 @@
 .nav-link.active {
   background-color: #007bff; /* Active tab color */
   color: white; /* Active text color */
+}
+
+.table {
+  overflow-x: auto;
+  padding: 15px;
+  table-layout:auto;
+  width: 100%;  
+}
+
+.table-cell {
+  max-width: 50px; /* Adjust the max width as needed */
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent wrapping */
+  text-overflow: ellipsis; /* Show ellipsis for overflowing text */
 }
 
 /*Responsiveness of the tables*/
@@ -59,7 +73,6 @@
 
   .table th {
       display: inside; /* Stack headers */
-      width: 100%; /* Full width for headers */
   }
 
   .table td {
@@ -70,7 +83,7 @@
 }
 
 .td {
-  overflow: hidden; /* Hides the overflow text */
+  overflow-x: hidden; /* Hides the overflow text */
   text-overflow: ellipsis; /* Adds ellipsis (...) for overflow text */
   white-space: nowrap; /* Prevents text from wrapping to a new line */
   max-width: 150px; /* Set a max width for the cell */
@@ -130,6 +143,11 @@ header {
   width: 100%;
 }
 
+.button_container {
+  width: 50%;
+  transform: translateX(50%);
+}
+
 /*above the fold styling*/
 
  .abovethefold {
@@ -144,6 +162,15 @@ header {
 
 .card-header {
   padding-bottom: 15px;
+}
+
+.card-body {
+padding-top: 50px;
+}
+
+.border_color {
+  border-color: #007bff;
+  border-width: 2px;
 }
 
 .nopadding {
@@ -162,7 +189,9 @@ header {
     width: 100%;
 } 
 
-
+.mobile-bg {
+  display: none;
+} 
 
 /*______________________________MEDIA QUERIES______________________________*/
 
@@ -194,6 +223,14 @@ header {
     height: 500px;
     width: 90%;
       } 
+
+  .desktop-bg {
+    display: none;
+     }
+
+  .mobile-bg {
+    display: block;
+   }
 }
 
   @media only screen and (max-width: 1024px) {

@@ -171,30 +171,117 @@ function updateImageJudiciary() {
     });
 }
 
+            // Function to update images for Kane County
+function updateImageKendall() {
+    $('#nav-kendall-table tr').each(function() {
+        if ($(this).index() === 0) return; // Skip header
+        updatePartyImage($(this));
+    });
+}
+
+// Function to update images for Lake County
+function updateImagesPresident() {
+    $('#nav-us-president-table tr').each(function() {
+        if ($(this).index() === 0) return; // Skip header
+        updatePresidentImage($(this));
+    });
+}
+// Function to update images for Lake County
+function updateImagesUSHouse() {
+    $('#nav-us-house-table tr').each(function() {
+        if ($(this).index() === 0) return; // Skip header
+        updatePartyImage($(this));
+    });
+}
+
+// Function to update images for IL House
+function updateImagesILHouse() {
+    $('#nav-IL-house-table tr').each(function() {
+        if ($(this).index() === 0) return; // Skip header
+        updatePartyImage($(this));
+    });
+}
+// Function to update images for Lake County
+function updateImagesILSenate() {
+    $('#nav-us-senate-table tr').each(function() {
+        if ($(this).index() === 0) return; // Skip header
+        updatePartyImage($(this));
+    });
+}
+
+// Function to update images for Cook County
+
+function updateImageCook() {
+    // Similar implementation as before, but scoped to Cook County
+    $('#nav-cook-table tr').each(function() {
+        if ($(this).index() === 0) return; // Skip header
+        updatePartyImage($(this));
+    });
+}
+
+// Function to update images for DuPage County
+function updateImageDuPage() {
+    $('#nav-dupage-table tr').each(function() {
+        if ($(this).index() === 0) return; // Skip header
+        updatePartyImage($(this));
+    });
+}
+
+// Function to update images for Lake County
+function updateImageLake() {
+    $('#nav-lake-table tr').each(function() {
+        if ($(this).index() === 0) return; // Skip header
+        updatePartyImage($(this));
+    });
+}
+// Function to update images for Kane County
+function updateImageKane() {
+    $('#nav-kane-table tr').each(function() {
+        if ($(this).index() === 0) return; // Skip header
+        updatePartyImage($(this));
+    });
+}
+
+// Function to update images for Will County
+function updateImageWill() {
+    $('#nav-will-table tr').each(function() {
+        if ($(this).index() === 0) return; // Skip header
+        updatePartyImage($(this));
+    });
+}
+
+function updateImageJudiciary() {
+    $('#nav-judiciary-table tr').each(function() {
+        if ($(this).index() === 0) return; // Skip header
+        updatePartyImage($(this));
+    });
+}
+
+
 function updatePresidentImage(row) {
-    var firstCell = row.find('td').first();
-    var cellText = firstCell.text().trim();
-    var img = $('<img>').attr('width', '100');
-    var partyName = '';
+var firstCell = row.find('td').first();
+var cellText = firstCell.text().trim();
+var img = $('<img>').attr('width', '100');
+var partyName = '';
 
-    // Set the image source based on the cell text
-    if (cellText === 'R') {
-        img.attr('src', 'IMAGES/TRUMP-01.png').attr('alt', 'Republican');
-        partyName = ' Republican';
-    } else if (cellText === 'D') {
-        img.attr('src', 'IMAGES/HARRIS-01.png').attr('alt', 'Democrat');
-        partyName = ' Democrat';
-    } else if (cellText === 'G') {
-        img.attr('src', 'IMAGES/STEIN-01.png').attr('alt', 'Green');
-        partyName = ' Green';
-    } else if (cellText === 'L') {
-        img.attr('src', 'IMAGES/OLIVER-01.png').attr('alt', 'Libertarian');
-        partyName = ' Libertarian';
-    }else {
-        img.attr('src', 'IMAGES/DEFAULT-01.png').attr('alt', 'Unknown');
-    }
+// Set the image source based on the cell text
+if (cellText === 'R') {
+    img.attr('src', 'IMAGES/TRUMP-01.png').attr('alt', 'Republican');
+    partyName = ' Republican';
+} else if (cellText === 'D') {
+    img.attr('src', 'IMAGES/HARRIS-01.png').attr('alt', 'Democrat');
+    partyName = ' Democrat';
+} else if (cellText === 'G') {
+    img.attr('src', 'IMAGES/STEIN-01.png').attr('alt', 'Green');
+    partyName = ' Green';
+} else if (cellText === 'L') {
+    img.attr('src', 'IMAGES/OLIVER-01.png').attr('alt', 'Libertarian');
+    partyName = ' Libertarian';
+}else {
+    img.attr('src', 'IMAGES/DEFAULT-01.png').attr('alt', 'Unknown');
+}
 
-    firstCell.empty().append(img);
+firstCell.empty().append(img);
 }
 
 // General function to update party images
