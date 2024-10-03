@@ -54,6 +54,7 @@
   text-overflow: ellipsis; /* Show ellipsis for overflowing text */
 }
 
+
 /*Responsiveness of the tables*/
 @media (max-width: 600px) {
   .table {
@@ -146,6 +147,10 @@ header {
 .button_container {
   width: 50%;
   transform: translateX(50%);
+}
+
+ul {
+  list-style-position: outside;
 }
 
 /*above the fold styling*/
