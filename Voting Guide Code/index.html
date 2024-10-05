@@ -1,23 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Voter Guide</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script src="scroll.js" charset="utf-8"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="boots.css">
-
-
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-         <script defer src="script.js"></script>
-         <script defer src="app.js"></script>
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-         <script src="scroll.js"></script>
-         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-
-
+       
     </head>
         
     <body class="vsc-initialized mt-0 container-fluid p-0">
@@ -84,7 +73,7 @@
                                           <ul class="dropdown-menu dropdown-menu-light">
                                             <li><a class="dropdown-item text-center" href="https://abcotvdata.github.io/2024_election_guides/Voting%20Guide%20Code/WABC.html">New York</a></li>
                                             <li><a class="dropdown-item text-center" href="https://abcotvdata.github.io/2024_election_guides/Voting%20Guide%20Code/KABC.html">Los Angeles</a></li>
-                                            <li><a class="dropdown-item text-center" href="https://abcotvdata.github.io/2024_election_guides/Voting%20Guide%20Code/WLS.html">Chicago</a></li>
+                                            <li><a class="dropdown-item text-center" href="https://abcotvdata.github.io/2024_election_guides/Voting%20Guide%20Code/WLS_IL.html">Chicago</a></li>
                                             <li><a class="dropdown-item text-center" href="https://abcotvdata.github.io/2024_election_guides/Voting%20Guide%20Code/WPVI.html">Philadelphia</a></li>
                                             <li><a class="dropdown-item text-center" href="https://abcotvdata.github.io/2024_election_guides/Voting%20Guide%20Code/KTRK.html">Houston</a></li>
                                             <li><a class="dropdown-item text-center" href="https://abcotvdata.github.io/2024_election_guides/Voting%20Guide%20Code/KGO.html">San Francisco</a></li>
@@ -297,103 +286,143 @@
               
                   
                     </div>   
+                    <div class="container mt-5">
+    <h2>Choose an Issue</h2>
 
-                <div class="container text-center mt-5">
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8">
-                            <h2 id="Issues">Issues</h2>
-                              </div>
-                      
-                            <!--Table layout for different local issues. It includes a dropdown menu.-->
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Choose an Issue
-                                </button>
-                                <br><br>
-                                <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button" id="prop1">Prop #1</button></li>
-
-
-                                    
-                                    <li><button class="dropdown-item" type="button" data-bs-toggle="tab" data-bs-target="#dropdown-prop1">Prop #2</button></li>
-                                    <li><button class="dropdown-item" type="button">Prop #3</button></li>
-                                    <li><button class="dropdown-item" type="button">Prop #4</button></li>
-                                </ul>
-                                </div>
-
-                            <div class="tab-content" id="nav-tab-issues">
-                                <div class="tab-pane fade show active" id="dropdown-prop1" role="tabpanel" aria-labelledby="dropdown-prop1">
-                                    <table class="table container-fluid">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">Prop</th>
-                                            <!-- <th scope="col">Description</th> -->
-                                            <th scope="col">Argument for</th>
-                                            <th scope="col">Argument against</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="table-group-divider">
-                                            <tr>
-                                            <th scope="row">Prop #1 - Abortion Amendment</th>
-                                            <!-- <td>This measure would amend the California Constitution to prohibit the state from denying or interfering with an individuals' reproductive freedom</td> -->
-                                            <td>Prop 1 protects individual choices on reproductive care and the right to choose to have an abortion</td>
-                                            <td>keeping medical decisions where they belong—between a patient and their provider.</td>
-                                            </tr>
-
-                                            <div class="videobox">
-                                                <div class="iframecontainer">
-                                                    <iframe src=" https://abc7news.com/video/embed/?pid=14854789" scrolling="no"></iframe>
-                                                </div>
-                                            </div>
-                                            <br>
-                                            
-                                            
-                                            <!-- <tr>
-                                            <th scope="row">Prop #1 - Abortion Amendment</th>
-                                            <td>This measure would amend the California Constitution to prohibit the state from denying or interfering with an individuals' reproductive freedom</td>
-                                            <td>Prop 1 protects individual choices on reproductive care and the right to choose to have an abortion</td>
-                                            <td>keeping medical decisions where they belong—between a patient and their provider.</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">Prop #1 - Abortion Amendment</th>
-                                            <td>This measure would amend the California Constitution to prohibit the state from denying or interfering with an individuals' reproductive freedom</td>
-                                            <td>Prop 1 protects individual choices on reproductive care and the right to choose to have an abortion</td>
-                                            <td>keeping medical decisions where they belong—between a patient and their provider.</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">Prop #1 - Abortion Amendment</th>
-                                            <td>This measure would amend the California Constitution to prohibit the state from denying or interfering with an individuals' reproductive freedom</td>
-                                            <td>Prop 1 protects individual choices on reproductive care and the right to choose to have an abortion</td>
-                                            <td>keeping medical decisions where they belong—between a patient and their provider.</td>
-                                            </tr> -->
-                                            
-                                        </tbody>
-                                        </table>
-                                </div>
-
-
-                            </div>
-
-
-                            
-                        </div>
-                        <div class="col-2">
-                            <!--Empty column for formatting the card-->
-                        </div>
+    <!--NEW DROP DOWN MENU- This section lists the items in the drop down-->
+    
+    <div class="container text-center mt-5">
+        <h2>Choose an Issue</h2>
+        
+        <div class="dropdown"> 
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Choose an Issue
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><button class="dropdown-item" type="button" id="table1">Table #1</button></li>
+                <li><button class="dropdown-item" type="button" id="table2">Table #2</button></li>
+                <li><button class="dropdown-item" type="button" id="table3">Table #3</button></li>
+                <li><button class="dropdown-item" type="button" id="table4">Table #4</button></li>
+            </ul>
+        </div>
+        <!--NEW DROP DOWN MENU- This section contains the content when you click on one of the dropdown items-->
+        <div id="content">
+            <br>
+            <div id="dropdown-table1" class="content">
+                <h3>Table for Prop #1 - Abortion Amendment</h3>
+                <table class="table container-fluid">
+                    <thead>
+                        <tr>
+                            <th scope="col">Prop</th>
+                            <th scope="col">Argument for</th>
+                            <th scope="col">Argument against</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">Prop #1 - Abortion Amendment</th>
+                            <td>Prop 1 protects individual choices on reproductive care and the right to choose to have an abortion.</td>
+                            <td>Keeping medical decisions where they belong—between a patient and their provider.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="videobox">
+                    <div class="iframecontainer">
+                        <iframe src="https://abc7news.com/video/embed/?pid=14854789" scrolling="no" frameborder="0"></iframe>
                     </div>
                 </div>
+            </div>
+    
+            <div id="dropdown-table2" class="content">
+                <!-- Add content for Table #2 here -->
+                <h3>Table for Prop #2 - Abortion Amendment</h3>
+                <table class="table container-fluid">
+                    <thead>
+                        <tr>
+                            <th scope="col">Prop</th>
+                            <th scope="col">Argument for</th>
+                            <th scope="col">Argument against</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">Prop #2 - OTHER Amendment</th>
+                            <td>Prop 2 protects individual choices on reproductive care and the right to choose to have an abortion.</td>
+                            <td>Keeping medical decisions where they belong—between a patient and their provider.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="dropdown-table3" class="content">
+                <h3>Table content for Prop #3</h3>
+                <!-- Add content for Table #3 here -->
+                <table class="table container-fluid">
+                    <thead>
+                        <tr>
+                        <th scope="col">Topic</th>
+                        <!-- <th scope="col">Description</th> -->
+                        <th scope="col">Question</th>
+                        <!-- <th scope="col">Argument against</th> -->
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                        <th scope="row">Assisted Reproductive Healthcare</th>
 
-                <div class="container mt-5">
-                  
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              
-                    <br><br>
-                  
-                    </div>   
-        
+                        <td>Should all medically appropriate assisted reproductive treatments, including, but not limited to, in vitro fertilization, be covered by any health insurance plan in Illinois that provides coverage for pregnancy benefits, without limitation on the number of treatments?</td>
+                        </tr>
+                
+                        <tr>
+                        <th scope="row">Income Tax</th>
+                        
+                        <td>Should the Illinois Constitution be amended to create an additional 3% tax on income greater than $1,000,000 for the purpose of dedicating funds raised to property tax relief?</td>
+                        </tr>
+                        <tr>
+
+                        <th scope="row">Penalties for Candidate Interference with Election Workers’ Duties</th>
+                        
+                        <td>Should any candidate appearing on the Illinois ballot for federal, State, or local office be subject to civil penalties if the candidate interferes or attempts to interfere with an election worker's official duties?</td>
+                        </tr>
+                        
+                    </tbody>
+                    </table>
+            </div>
+            <div id="dropdown-table4" class="content">
+                <h3>Table content for Prop #3</h3>
+                <!-- Add content for Table #4 here -->
+                <table class="table container-fluid">
+                    <thead>
+                        <tr>
+                        <th scope="col">Topic</th>
+                        <!-- <th scope="col">Description</th> -->
+                        <th scope="col">Question</th>
+                        <!-- <th scope="col">Argument against</th> -->
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                        <th scope="row">Assisted Reproductive Healthcare</th>
+
+                        <td>Should all medically appropriate assisted reproductive treatments, including, but not limited to, in vitro fertilization, be covered by any health insurance plan in Illinois that provides coverage for pregnancy benefits, without limitation on the number of treatments?</td>
+                        </tr>
+                
+                        <tr>
+                        <th scope="row">Income Tax</th>
+                        
+                        <td>Should the Illinois Constitution be amended to create an additional 3% tax on income greater than $1,000,000 for the purpose of dedicating funds raised to property tax relief?</td>
+                        </tr>
+                        <tr>
+
+                        <th scope="row">Penalties for Candidate Interference with Election Workers’ Duties</th>
+                        
+                        <td>Should any candidate appearing on the Illinois ballot for federal, State, or local office be subject to civil penalties if the candidate interferes or attempts to interfere with an election worker's official duties?</td>
+                        </tr>
+                        
+                    </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
                 <div class="container">
                     <div class="row">
                             <!--Empty column for formatting the card-->
@@ -413,7 +442,16 @@
     </div>
     <br>
     <!-- End page content -->
-    <script src="buildTable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--<script defer src="script.js"></script>
+    <script defer src="app.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>-->
+    <script src="dropdown.js"></script>
     <script src="tableTab.js"></script>
     </body>
     </html>
