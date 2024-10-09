@@ -55,8 +55,8 @@ load_chunks <- function(output_dir) {
 }
 cat("Current working directory:", getwd(), "\n")
 
-output1_path <- "processed_data_chicago.rds"
-output2_path <- "processed_data_cook.rds"
+output1_path <- "2024_election_guides/Voting Guide Code/maggie_code/processed_data_chicago.rds"
+output2_path <- "2024_election_guides/Voting Guide Code/maggie_code/processed_data_cook.rds"
 
 # Load the processed chunk data into memory
 cat("Loading Chicago data chunks...\n")
