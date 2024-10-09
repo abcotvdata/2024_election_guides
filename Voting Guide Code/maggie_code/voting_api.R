@@ -3,17 +3,20 @@
 library(data.table)
 library(plumber)
 
-# Wait for the processed data files to become available
-while (!file.exists("processed_data_chicago.rds") || !file.exists("processed_data_cook.rds")) {
+
+
+data_chicago_path <- "2024_election_guides/Voting Guide Code/maggie_code/processed_data_chicago.rds"
+data_cook_path <- "2024_election_guides/Voting Guide Code/maggie_code/processed_data_cook.rds"
+
+# Wait for the processed data files to be available
+while (!file.exists(data_chicago_path) || !file.exists(data_cook_path)) {
   cat("Waiting for preprocessed data files to be available...\n")
   Sys.sleep(5)  # Wait for 5 seconds before checking again
 }
 
-cat("Current working directory:", getwd(), "\n")
-
-# Load preprocessed data from RDS files
-voting_data_chicago <- readRDS("processed_data_chicago.rds")
-voting_data_cook <- readRDS("processed_data_cook.rds")
+# Load preprocessed data from RDS files using the specified paths
+voting_data_chicago <- readRDS(data_chicago_path)
+voting_data_cook <- readRDS(data_cook_path)
 
 #* @filter cors
 cors <- function(req, res) {
