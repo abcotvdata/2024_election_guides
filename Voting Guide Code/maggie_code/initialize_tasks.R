@@ -65,6 +65,23 @@ cat("Loading Cook data chunks...\n")
 voting_data_cook <- load_chunks(output_dir_cook)
 
 
+# Define the output directory and file paths
+output_dir <- "2024_election_guides/Voting Guide Code/maggie_code"
+output1_path <- file.path(output_dir, "processed_data_chicago.rds")
+output2_path <- file.path(output_dir, "processed_data_cook.rds")
+
+# Create the directory if it doesn't exist
+if (!dir.exists(output_dir)) {
+  dir.create(output_dir, recursive = TRUE)
+}
+
+# Load the processed chunk data into memory
+cat("Loading Chicago data chunks...\n")
+voting_data_chicago <- load_chunks(output_dir_chicago)
+cat("Loading Cook data chunks...\n")
+voting_data_cook <- load_chunks(output_dir_cook)
+
+# Save the datasets to RDS files using the specified paths
 saveRDS(voting_data_chicago, file = output1_path)
 saveRDS(voting_data_cook, file = output2_path)
 
