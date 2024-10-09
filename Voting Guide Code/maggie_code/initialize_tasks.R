@@ -53,6 +53,10 @@ load_chunks <- function(output_dir) {
   }))
   return(all_data)
 }
+cat("Current working directory:", getwd(), "\n")
+
+output1_path <- "processed_data_chicago.rds"
+output2_path <- "processed_data_cook.rds"
 
 # Load the processed chunk data into memory
 cat("Loading Chicago data chunks...\n")
@@ -60,8 +64,21 @@ voting_data_chicago <- load_chunks(output_dir_chicago)
 cat("Loading Cook data chunks...\n")
 voting_data_cook <- load_chunks(output_dir_cook)
 
-# Save the loaded datasets to RDS files for later use by the web dyno
-saveRDS(voting_data_chicago, file = "processed_data_chicago.rds")
-saveRDS(voting_data_cook, file = "processed_data_cook.rds")
+
+saveRDS(voting_data_chicago, file = output1_path)
+saveRDS(voting_data_cook, file = output2_path)
+
+# Verify that the files were created
+if (file.exists(output1_path)) {
+  cat("Successfully created", output1_path, "\n")
+} else {
+  cat("Failed to create", output1_path, "\n")
+}
+
+if (file.exists(output2_path)) {
+  cat("Successfully created", output2_path, "\n")
+} else {
+  cat("Failed to create", output2_path, "\n")
+}
 
 cat("Initialization completed.\n")
