@@ -6,5 +6,5 @@ library(plumber)
 
 # Serve the API
 port <- as.numeric(Sys.getenv("PORT", "8000"))
-api <- plumb("Voting Guide Code/maggie_code/voting_api2.R")  # Adjust the path as needed
+api <- plumb("Voting Guide Code/maggie_code/voting_api.R")  # Adjust the path as needed
 api$run(host = "0.0.0.0", port = 8000)
