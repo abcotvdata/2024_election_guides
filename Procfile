@@ -1,1 +1,1 @@
-web: cd "'Voting Guide Code'/maggie_code" && R - f start_api.R
+web: Rscript "Voting Guide Code/maggie_code/start_api.R"
