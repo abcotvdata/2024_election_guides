@@ -9,6 +9,6 @@
     }
   },
   "scripts": {
-    "postdeploy": "cd 'Voting Guide Code' cd: maggie_code"
+    "postdeploy": "cd 'Voting Guide Code'/maggie_code"
   }
 }
