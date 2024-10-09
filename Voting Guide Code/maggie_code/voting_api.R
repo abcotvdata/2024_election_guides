@@ -9,6 +9,8 @@ while (!file.exists("processed_data_chicago.rds") || !file.exists("processed_dat
   Sys.sleep(5)  # Wait for 5 seconds before checking again
 }
 
+cat("Current working directory:", getwd(), "\n")
+
 # Load preprocessed data from RDS files
 voting_data_chicago <- readRDS("processed_data_chicago.rds")
 voting_data_cook <- readRDS("processed_data_cook.rds")
