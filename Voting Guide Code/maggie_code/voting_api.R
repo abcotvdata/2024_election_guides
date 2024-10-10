@@ -3,7 +3,7 @@
 library(plumber)
 
 # Define the path for loading the test RDS file
-test_data_path <- "Voting Guide Code/maggie_code/test_data.rds"
+test_data_path <- "/app/Voting Guide Code/maggie_code/test_data.rds"
 
 # Log the current working directory
 cat("Current working directory:", getwd(), "\n")
