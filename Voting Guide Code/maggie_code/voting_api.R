@@ -5,10 +5,25 @@ library(plumber)
 # Define the path for loading the test RDS file
 test_data_path <- "Voting Guide Code/maggie_code/test_data.rds"
 
+# Log the current working directory
+cat("Current working directory:", getwd(), "\n")
+cat("Looking for test data file at:", test_data_path, "\n")
+
+max_wait_time <- 60  # Maximum wait time in seconds
+wait_interval <- 5   # Interval to check for file existence
+
+
 # Wait for the test data file to be available
-while (!file.exists(test_data_path)) {
+elapsed_time <- 0
+while (!file.exists(test_data_path) && elapsed_time < max_wait_time) {
   cat("Waiting for the test data file to be available...\n")
-  Sys.sleep(5)  # Wait for 5 seconds before checking again
+  Sys.sleep(wait_interval)  # Wait for the specified interval before checking again
+  elapsed_time <- elapsed_time + wait_interval
+}
+
+# Check if the file was found within the time limit
+if (!file.exists(test_data_path)) {
+  stop("Test data file was not found within the time limit. Exiting.")
 }
 
 # Load the test data from the RDS file
