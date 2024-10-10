@@ -2,6 +2,10 @@
 
 library(data.table)
 
+#change working directory to repository root
+
+setwd("2024_election_guides")
+
 # Print the current working directory
 cat("Current working directory:", getwd(), "\n")
 
@@ -68,9 +72,11 @@ voting_data_chicago <- load_chunks(output_dir_chicago)
 #voting_data_cook <- load_chunks(output_dir_cook)
 
 cat("Current working directory:", getwd(), "\n")
+setwd("2024_election_guides")
+
 
 # Define the output directory and file paths
-output_dir <- "2024_election_guides/Voting Guide Code/maggie_code"
+output_dir <- "Voting Guide Code/maggie_code"
 output1_path <- file.path(output_dir, "processed_data_chicago.rds")
 #output2_path <- file.path(output_dir, "processed_data_cook.rds")
 
