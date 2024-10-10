@@ -3,20 +3,20 @@
 library(data.table)
 library(plumber)
 
+cat("Current working directory:", getwd(), "\n")
 
-
-data_chicago_path <- "2024_election_guides/Voting Guide Code/maggie_code/processed_data_chicago.rds"
-data_cook_path <- "2024_election_guides/Voting Guide Code/maggie_code/processed_data_cook.rds"
+data_chicago_path <- "Voting Guide Code/maggie_code/processed_data_chicago.rds"
+#data_cook_path <- "Voting Guide Code/maggie_code/processed_data_cook.rds"
 
 # Wait for the processed data files to be available
-while (!file.exists(data_chicago_path) || !file.exists(data_cook_path)) {
+while (!file.exists(data_chicago_path)) {
   cat("Waiting for preprocessed data files to be available...\n")
   Sys.sleep(5)  # Wait for 5 seconds before checking again
 }
 
 # Load preprocessed data from RDS files using the specified paths
 voting_data_chicago <- readRDS(data_chicago_path)
-voting_data_cook <- readRDS(data_cook_path)
+#voting_data_cook <- readRDS(data_cook_path)
 
 #* @filter cors
 cors <- function(req, res) {
@@ -39,8 +39,8 @@ function(q = "") {
 
   # Match addresses
   matches_chicago <- voting_data_chicago[grepl(tolower(q), tolower(voting_data_chicago$address_full)), address_full]
-  matches_cook <- voting_data_cook[grepl(tolower(q), tolower(voting_data_cook$address_full)), address_full]
-  suggestions <- unique(c(matches_chicago, matches_cook))[1:5]
+  #matches_cook <- voting_data_cook[grepl(tolower(q), tolower(voting_data_cook$address_full)), address_full]
+  suggestions <- unique(c(matches_chicago))[1:5]
   
   return(suggestions)
 }
@@ -55,7 +55,7 @@ function(address = "") {
   
   # Look up address in both datasets
   record_chicago <- voting_data_chicago[address_full == address, ]
-  record_cook <- voting_data_cook[address_full == address, ]
+  #record_cook <- voting_data_cook[address_full == address, ]
   
   # Combine results
   combined_record <- list()
@@ -63,9 +63,9 @@ function(address = "") {
   if (nrow(record_chicago) > 0) {
     combined_record <- c(as.list(record_chicago), combined_record)
   }
-  if (nrow(record_cook) > 0) {
-    combined_record <- c(as.list(record_cook), combined_record)
-  }
+  #if (nrow(record_cook) > 0) {
+    #combined_record <- c(as.list(record_cook), combined_record)
+  #}
 
   return(combined_record)
 }
