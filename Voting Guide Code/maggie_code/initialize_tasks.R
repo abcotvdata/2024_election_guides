@@ -72,7 +72,6 @@ voting_data_chicago <- load_chunks(output_dir_chicago)
 #voting_data_cook <- load_chunks(output_dir_cook)
 
 cat("Current working directory:", getwd(), "\n")
-setwd("2024_election_guides")
 
 
 # Define the output directory and file paths
