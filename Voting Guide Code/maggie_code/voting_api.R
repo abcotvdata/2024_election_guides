@@ -3,7 +3,6 @@
 library(data.table)
 library(plumber)
 
-setwd("2024_election_guides")
 cat("Current working directory:", getwd(), "\n")
 
 data_chicago_path <- "Voting Guide Code/maggie_code/processed_data_chicago.rds"
