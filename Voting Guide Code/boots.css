@@ -13,19 +13,6 @@
  .content {
   display: none; /* Hide content by default */
 }
-.iframecontainer {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
-}
-.iframecontainer iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
   body {
   font-size: 1rem;
@@ -55,6 +42,10 @@
 .nav-link.active {
   background-color: #007bff; /* Active tab color */
   color: white; /* Active text color */
+}
+
+.props {
+  width: 70% !important;
 }
 
 .table {
@@ -251,15 +242,20 @@ padding-top: 50px;
      }
 
   .mobile-bg {
-    display: block;
+    display: 
+    block;
    }
+
 }
 
   @media only screen and (max-width: 1024px) {
   .videobox {
     width: 100%;
       } 
-
+      .props {
+        width: 100% !important;
+      }
+      
   }
 
   @media only screen and (min-width: 1025px) {
