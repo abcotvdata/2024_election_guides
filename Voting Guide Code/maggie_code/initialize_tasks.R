@@ -4,7 +4,7 @@ library(data.table)
 
 #change working directory to repository root
 
-setwd("2024_election_guides")
+#setwd("2024_election_guides")
 
 # Print the current working directory
 cat("Current working directory:", getwd(), "\n")
