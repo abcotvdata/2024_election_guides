@@ -13,4 +13,5 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById(targetContent).style.display = 'block'; // Show the selected content
         });
     });
+    document.getElementById('dropdown-table1').style.display = 'block'; // Show the first content
 });

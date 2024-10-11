@@ -20,7 +20,7 @@ $(document).ready(function() {
                         if (count === 0) {
                             table_data += '<th>' + cell_data[cell_count] + '</th>';
                         } else { //This adds a hyperlink column for candidate campaigns
-                            if (cell_count === 4) { // Assuming the third column is the URL
+                            if (cell_count === 4) { // Assuming the fourth column is the URL
                                 table_data += '<td class="table-cell"><a href="' + cell_data[cell_count] + '" target="_blank">' + cell_data[cell_count] + '</a></td>';
                             } else {
                                 table_data += '<td>' + cell_data[cell_count] + '</td>';
@@ -40,9 +40,9 @@ $(document).ready(function() {
     }
 
     // Load US President Race data
-    $('#nav-us-president-tab').click(function() {
-        loadCSV('Excel_Files/WLS_Chicago_Races/Presidential_Election_Race.csv', '#nav-us-president-table', updateImagesPresident);
-    });
+    
+    loadCSV('Excel_Files/WLS_Chicago_Races/Presidential_Election_Race.csv', '#nav-us-president-table', updateImagesPresident);
+
     // Load US House Race data
     $('#nav-us-house-tab').click(function() {
         loadCSV('Excel_Files/WLS_Chicago_Races/US_House_Races.csv', '#nav-us-house-table', updateImagesUSHouse);
