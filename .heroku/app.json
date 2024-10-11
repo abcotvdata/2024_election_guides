@@ -1,0 +1,14 @@
+{
+  "environments": {
+    "production": {
+      "buildpacks": [
+        {
+          "url": "https://github.com/virtualstaticvoid/heroku-buildpack-r.git"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "postdeploy": "cd 'Voting Guide Code'/maggie_code"
+  }
+}

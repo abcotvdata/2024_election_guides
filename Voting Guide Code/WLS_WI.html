@@ -28,8 +28,8 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col p-0">
-                          <img src="IMAGES/YVYV_2024_header_smaller-01.png" class="img-fluid desktop-bg" alt="desktop image">
-                          <img src="IMAGES/HEADER_MOBILE_02.png" class="img-fluid mobile-bg" alt="mobile image">
+                            <img src="IMAGES/YVYV_2024_header_WLS-01.png" class="img-fluid desktop-bg" alt="desktop image">
+                            <img src="IMAGES/YVYV_2024_WLS_MOBILE-02.png" class="img-fluid mobile-bg" alt="mobile image">
                         </div>
                     </div>
                 </div>
@@ -105,9 +105,9 @@
                         <li class="nav-item my-auto"> 
                         <a class="nav-link" href="#Deadlines">Deadlines</a>
                         </li>
-                        <li class="nav-item my-auto">
+                        <!-- <li class="nav-item my-auto">
                             <a class="nav-link" href="#Candidates">Candidates</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item my-auto">
                             <a class="nav-link" href="#Issues">Ballot Measures</a>
                         </li>
@@ -142,7 +142,7 @@
 
         <br><br>
       
-        <p>GENERAL INTRO TEXT HERE</p>
+        <p>The 2024 election will be held on Tuesday, November 5, 2024. Offices up for election range from the president and vice president of the United States to local and municipal elections. Here's what you need to know to get ready to vote in the 2024 election.</p>
       
         <p>Wisconsin requires voters to show a photo ID when voting on Election Day or while casting an in-person absentee ballot at a clerk’s office. Those voting absentee must provide a photocopy of their ID to vote absentee by mail.</p>
 
@@ -156,17 +156,16 @@
 
         <p>Once you’ve filled out your ballot, you will place it in the certificate envelope, seal and sign it, and then have your witness add their address and signature too.</p>
             
-        <p>Mail-in ballots can be returned by mail, dropped off at your clerk’s office for absentee in-person voting, or taken to your assigned polling place or absentee counting location on Election Day. If you opt for absentee in-person voting, check your local clerk’s office to see if they require an appointment, or if there are other in-person absentee locations like local libraries. You can also search for this information on the <a href="https://myvote.wi.gov/en-us/Vote-Absentee-Guide">MyVote Wisconsin website</a>.</p>
-            
-        </div>   
-
+        <p id="Deadlines">Mail-in ballots can be returned by mail, dropped off at your clerk’s office for absentee in-person voting, or taken to your assigned polling place or absentee counting location on Election Day. If you opt for absentee in-person voting, check your local clerk’s office to see if they require an appointment, or if there are other in-person absentee locations like local libraries. You can also search for this information on the <a href="https://myvote.wi.gov/en-us/Vote-Absentee-Guide">MyVote Wisconsin website</a>.</p>
+        </div>                   
+å
     <!--This portion of code is scrollspy so the navigation buttons auto-scroll to the specific content when a button is clicked on the navbar-->
     <div data-spy="scroll" data-target="#navbar-main" data-offset="10">
                 <br>
                 <div class="container">
                         
                     <div class="row text-center">
-                        <h2 id="Deadlines">Deadlines</h2>
+                        <h2>Deadlines</h2>
                         <div class="col-md mb-3">
                             <br>
                             <div class="card border_color text-center h-100">
@@ -219,105 +218,23 @@
 
                   <p>The deadline to request an absentee ballot for regular and permanent overseas voters is October 31, 2024.</p> 
             
-                  <p>All absentee ballots cast by mail must be postmarked by Election Day, November 5, 2024.</p>
+                  <p id="Issues">All absentee ballots cast by mail must be postmarked by Election Day, November 5, 2024.</p>
                           
                     </div>   
     
     
-    <!--This section handles the race TABS, which includes hyperlocal races-->
-    <div class="container mt-5">
-        <div class="row text-center">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <h2 id="Candidates">Candidate Races</h2>
-                <br>
-                <nav>
-                    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                        
-                        <button class="nav-link" id="nav-us-president-tab" data-bs-toggle="tab" data-bs-target="#nav-us-president" type="button" role="tab" aria-controls="nav-us-president" aria-selected="true">President</button>
-                        <button class="nav-link" id="nav-us-house-tab" data-bs-toggle="tab" data-bs-target="#nav-us-house" type="button" role="tab" aria-controls="nav-us-house" aria-selected="true">U.S. House</button>
-                        <button class="nav-link" id="nav-IL-house-tab" data-bs-toggle="tab" data-bs-target="#nav-IL-house" type="button" role="tab" aria-controls="nav-IL-house" aria-selected="false">IL House</button>
-                        <button class="nav-link" id="nav-us-senate-tab" data-bs-toggle="tab" data-bs-target="#nav-us-senate" type="button" role="tab" aria-controls="nav-us-senate" aria-selected="false">IL Senate</button>
-                        <button class="nav-link" id="nav-cook-tab" data-bs-toggle="tab" data-bs-target="#nav-cook" type="button" role="tab" aria-controls="nav-cook" aria-selected="false">Cook County</button>
-                        <button class="nav-link" id="nav-lake-tab" data-bs-toggle="tab" data-bs-target="#nav-lake" type="button" role="tab" aria-controls="nav-lake" aria-selected="false">Lake County</button>
-                        <button class="nav-link" id="nav-dupage-tab" data-bs-toggle="tab" data-bs-target="#nav-dupage" type="button" role="tab" aria-controls="nav-dupage" aria-selected="false">DuPage County</button>
-                        <button class="nav-link" id="nav-kane-tab" data-bs-toggle="tab" data-bs-target="#nav-kane" type="button" role="tab" aria-controls="nav-kane" aria-selected="false">Kane County</button>
-                        <button class="nav-link" id="nav-kendall-tab" data-bs-toggle="tab" data-bs-target="#nav-kendall" type="button" role="tab" aria-controls="nav-kendall" aria-selected="false">Kendall County</button>
-                        <button class="nav-link" id="nav-will-tab" data-bs-toggle="tab" data-bs-target="#nav-will" type="button" role="tab" aria-controls="nav-will" aria-selected="false">Will County</button>
-                        <button class="nav-link" id="nav-judiciary-tab" data-bs-toggle="tab" data-bs-target="#nav-judiciary" type="button" role="tab" aria-controls="nav-judiciary" aria-selected="false">Judiciary</button>
-
-                
-                    </div>
-                    </nav>
-                    <!--This section handles the CONTENT in each tab-->
-                    <div class="container mt-5 tab-content">
-                    <!--<div class="tab-pane fade show active" id="nav-house" role="tabpanel" aria-labelledby="nav-house-tab" tabindex="0" name="load_data"></div>-->
-
-                    <!--a responsive table that is populated by a csv file-->
-                   
-
-                    <div class="tab-pane fade" id="nav-us-president" role="tabpanel" aria-labelledby="nav-us-president-tab" tabindex="0">
-                        <table class="table table-striped table-bordered align-middle" id="nav-us-president-table"></table>
-                    </div>
-                   <div class="tab-pane fade" id="nav-us-house" role="tabpanel" aria-labelledby="nav-us-house-tab" tabindex="0">
-                        <table class="table table-striped table-bordered align-middle" id="nav-us-house-table"></table>
-                   </div>
-                   <div class="tab-pane fade" id="nav-IL-house" role="tabpanel" aria-labelledby="nav-IL-house-tab" tabindex="0">
-                    <table class="table table-striped table-bordered align-middle" id="nav-IL-house-table"></table>
-               </div>
-
-                   <div class="tab-pane fade" id="nav-us-senate" role="tabpanel" aria-labelledby="nav-us-senate-tab" tabindex="0">
-                        <table class="table table-striped table-bordered align-middle" id="nav-us-senate-table"></table>
-                   </div>
-
-                   <div class="tab-pane fade" id="nav-cook" role="tabpanel" aria-labelledby="nav-cook-tab" tabindex="0">
-                        <table class="table table-striped table-bordered align-middle" id="nav-cook-table"></table>
-                   </div>
-
-                   <div class="tab-pane fade" id="nav-lake" role="tabpanel" aria-labelledby="nav-lake-tab" tabindex="0">
-                        <table class="table table-striped table-bordered align-middle" id="nav-lake-table"></table>
-                   </div>
-                   <div class="tab-pane fade" id="nav-dupage" role="tabpanel" aria-labelledby="nav-dupage-tab" tabindex="0">
-                        <table class="table table-striped table-bordered align-middle" id="nav-dupage-table"></table>
-                   </div>
-                   <div class="tab-pane fade" id="nav-kane" role="tabpanel" aria-labelledby="nav-kane-tab" tabindex="0">
-                        <table class="table table-striped table-bordered align-middle" id="nav-kane-table"></table>
-                    </div>
-                   <div class="tab-pane fade" id="nav-kendall" role="tabpanel" aria-labelledby="nav-kendall-tab" tabindex="0">
-                        <table class="table table-striped table-bordered align-middle" id="nav-kendall-table"></table>
-                    </div>
-                    <div class="tab-pane fade" id="nav-will" role="tabpanel" aria-labelledby="nav-will-tab" tabindex="0">
-                        <table class="table table-striped table-bordered align-middle" id="nav-will-table"></table>
-                    </div>
-                    <div class="tab-pane fade" id="nav-judiciary" role="tabpanel" aria-labelledby="nav-judiciary-tab" tabindex="0">
-                            <table class="table table-striped table-bordered align-middle" id="nav-judiciary-table"></table>
-                    </div>
-
-
-                    </div>
-                </nav>
-
-            </div>
+    
                         <div class="col-2"></div>
                     </div>
                 </div>
                 <!-- Container for the Issues section, including a drop down to select the most important issues in that  -->
                 <br>
 
-                <div class="container mt-5">
-
-                    <p>SUMMARY PARAGRAPH ABOUT CANDIDATE INFO? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                    <br>
-                    <b><p>Select below to see more candidates by county?</p></b>
-                  
-                    </div>   
-
                 <div class="container text-center mt-5">
                     <div class="row">
                         <div class="col-2"></div>
                         <div class="col-8">
-                            <h2 id="Issues">Ballot Measures</h2>
+                            <h2>Ballot Measures</h2>
                               </div>
                             </div>
                         </div>
@@ -354,7 +271,7 @@
                                             <tr>
                                                 <td>
                                             <br>
-                                            <p>This changes the current state constitution, which states “Every Untied States citizen age 18 or older who is a resident of an election district” is eligible to vote, to instead say:</p>
+                                            <p>This changes the current state constitution, which states “Every United States citizen age 18 or older who is a resident of an election district” is eligible to vote, to instead say:</p>
                                             <p>“<u>Only a</u> United States citizen age 18 or older who is a resident of an election district in this state is a qualified elector of that district <u>who may vote in an election for national, state, or local office or at a statewide or local referendum.</u>"</p>
                                             </td>
                                             </tr>
@@ -376,7 +293,7 @@
 
                               </div>  -->
 
-                        <div class="col-2">
+                        <div id="Resources" class="col-2">
                             <!--Empty column for formatting the card-->
                         </div>
                     </div>
@@ -388,7 +305,7 @@
                     <div class="row text-center">
                         <div class="col-sm-2"></div>
                         <div class="col-sm-8">
-                            <h2 id="Resources">Resources</h2>
+                            <h2>Resources</h2>
                             <br>
        
                 </div>
@@ -423,7 +340,7 @@
         
               <br><br>
             
-              </div> 
+              
                         
                         <br>
                         <br>
