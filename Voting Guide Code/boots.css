@@ -85,9 +85,9 @@
   }
 
   .table td {
-      display: inside; /* Stack table cells */
-      width: 100%; /* Full width for cells */
-      overflow-wrap: break-word; /* Ensure text wraps appropriately */
+      display: inside; 
+      /* width: 100%;  */
+      overflow-wrap: break-word; 
   }
 }
 
