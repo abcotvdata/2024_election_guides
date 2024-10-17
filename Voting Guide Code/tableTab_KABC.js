@@ -110,22 +110,25 @@ function updatePresidentImage(row) {
 
   // Set the image source based on the cell text
   if (cellText === 'R') {
-      img.attr('src', 'IMAGES/TRUMP-01.png').attr('alt', 'Republican');
-      partyName = ' Republican';
-  } else if (cellText === 'D') {
-      img.attr('src', 'IMAGES/HARRIS-01.png').attr('alt', 'Democrat');
-      partyName = ' Democrat';
-  } else if (cellText === 'G') {
-      img.attr('src', 'IMAGES/STEIN-01.png').attr('alt', 'Green');
-      partyName = ' Green';
-  } else if (cellText === 'L') {
-      img.attr('src', 'IMAGES/LIBERTARIAN-01.png').attr('alt', 'Libertarian');
-      partyName = ' Libertarian';
-  }else {
-      img.attr('src', 'IMAGES/DEFAULT-01.png').attr('alt', 'Unknown');
-  }
+    img.attr('src', 'IMAGES/TRUMP-01.png').attr('alt', 'Republican');
+    partyName = ' Republican';
+} else if (cellText === 'D') {
+    img.attr('src', 'IMAGES/HARRIS-01.png').attr('alt', 'Democrat');
+    partyName = ' Democrat';
+} else if (cellText === 'G') {
+    img.attr('src', 'IMAGES/STEIN-01.png').attr('alt', 'Green');
+    partyName = ' Green';
+} else if (cellText === 'L') {
+    img.attr('src', 'IMAGES/OLIVER-01.png').attr('alt', 'Libertarian');
+    partyName = ' Libertarian';
+} else if (cellText === 'K') {
+    img.attr('src', 'IMAGES/KENNEDY-01.png').attr('alt', 'Independent');
+    partyName = ' Independent';
+} else {
+    img.attr('src', 'IMAGES/DEFAULT-01.png').attr('alt', 'Unknown');
+}
 
-  firstCell.empty().append(img);
+firstCell.empty().append(img);
 }
 
 function updateSenateImage(row) {
