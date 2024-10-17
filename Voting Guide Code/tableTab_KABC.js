@@ -119,7 +119,7 @@ function updatePresidentImage(row) {
       img.attr('src', 'IMAGES/STEIN-01.png').attr('alt', 'Green');
       partyName = ' Green';
   } else if (cellText === 'L') {
-      img.attr('src', 'IMAGES/BALLAY-01.png').attr('alt', 'Libertarian');
+      img.attr('src', 'IMAGES/LIBERTARIAN-01.png').attr('alt', 'Libertarian');
       partyName = ' Libertarian';
   }else {
       img.attr('src', 'IMAGES/DEFAULT-01.png').attr('alt', 'Unknown');

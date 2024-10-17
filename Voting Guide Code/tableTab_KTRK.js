@@ -78,7 +78,7 @@ function updateImagesPresident() {
 function updateImagesUSSenate() {
   $('#nav-us-senate-table tr').each(function() {
       if ($(this).index() === 0) return; // Skip header
-      updatePartyImage($(this));
+      updateSenateImage($(this));
   });
 }
 
@@ -112,6 +112,32 @@ function updateImagesTXCourt() {
       if ($(this).index() === 0) return; // Skip header
       updatePartyImage($(this));
   });
+}
+
+function updateSenateImage(row) {
+  var firstCell = row.find('td').first();
+  var cellText = firstCell.text().trim();
+  var img = $('<img>').attr('width', '100');
+  var partyName = '';
+
+  // Set the image source based on the cell text
+  if (cellText === 'C') {
+      img.attr('src', 'IMAGES/CRUZ-01.png').attr('alt', 'Democrat');
+      partyName = ' Democrat';
+  } else if (cellText === 'AL') {
+      img.attr('src', 'IMAGES/ALLRED-01.png').attr('alt', 'Republican');
+      partyName = ' Republican';
+  }  else if (cellText === 'AN') {
+      img.attr('src', 'IMAGES/ANDRUS-01.png').attr('alt', 'Unknown');
+      partyName = ' Unknown';
+  } else if (cellText === 'L') {
+    img.attr('src', 'IMAGES/LIBERTARIAN-01.png').attr('alt', 'Libertarian');
+    partyName = ' Libertarian';
+}   else {
+      img.attr('src', 'IMAGES/DEFAULT-01.png').attr('alt', 'Unknown');
+  }
+
+  firstCell.empty().append(img);
 }
 
 
