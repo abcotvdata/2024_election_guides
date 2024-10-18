@@ -188,7 +188,7 @@
 
                   <p>All California active registered voters will receive a vote-by-mail ballot for the general election. Voters have already started receiving the ballots, and ballot drop-off boxes opened on Oct. 8. Vote-by-mail ballots can be returned by mail, at a drop-off location, or at your county elections office.</p>
 
-                  <p>he last day to register to vote for this election is Oct. 21. However, California does offer “same day voter registration,” also known as conditional registration. Eligible citizens can register and then vote at their county elections office, polling place or vote center. Their ballots will be processed and counted once the county elections office has completed the voter registration verification process.</p>
+                  <p>The last day to register to vote for this election is Oct. 21. However, California does offer “same day voter registration,” also known as conditional registration. Eligible citizens can register and then vote at their county elections office, polling place or vote center. Their ballots will be processed and counted once the county elections office has completed the voter registration verification process.</p>
             
                   <p>A limited number of vote centers open for early in-person voting beginning on Oct. 26, with all opening on Nov. 2.</p>
 
@@ -276,7 +276,7 @@
                                   Choose a Prop
                               </button>
                               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><button class="dropdown-item" type="button" id="table1">Prop 2: Education Finance</button></li>
+                                  <li><button class="dropdown-item" type="button" id="table1" onclick="javascript::player.api('pause')">Prop 2: Education Finance</button></li>
                                   <li><button class="dropdown-item" type="button" id="table2">Prop 3: Marriage Equality</button></li>
                                   <li><button class="dropdown-item" type="button" id="table3">Prop 4: Climate Impacts</button></li>
                                   <li><button class="dropdown-item" type="button" id="table4">Prop 5: Affordable Housing</button></li>
@@ -295,7 +295,7 @@
               <h4>Prop 2: Education Finance</h4><br>
               <div class="videobox">
                 <div class="iframecontainer">
-                    <iframe src="https://abc30.com/video/embed/?pid=15418872" scrolling="no" frameborder="0"></iframe>
+                    <iframe id="abc-vid" src="https://abc30.com/video/embed/?pid=15418872" scrolling="no" frameborder="0"></iframe>
                 </div>
             </div>
         <br><br>
@@ -359,7 +359,7 @@
                 <h4>Prop 3: Marriage Equality</h4><br>
                 <div class="videobox">
                   <div class="iframecontainer">
-                      <iframe src="https://abc30.com/video/embed/?pid=15413826" scrolling="no" frameborder="0"></iframe>
+                      <iframe id="abc-vid" src="https://abc30.com/video/embed/?pid=15413826" scrolling="no" frameborder="0"></iframe>
                   </div>
               </div>
           <br><br>
@@ -424,7 +424,7 @@
                   <h4>Prop 4: Climate Impacts</h4><br>
                   <div class="videobox">
                     <div class="iframecontainer">
-                        <iframe src="https://abc30.com/video/embed/?pid=15414504" scrolling="no" frameborder="0"></iframe>
+                        <iframe id="abc-vid" src="https://abc30.com/video/embed/?pid=15414504" scrolling="no" frameborder="0"></iframe>
                     </div>
                 </div>
             <br><br>
@@ -489,7 +489,7 @@
                     <h4>Prop 5: Affordable Housing</h4><br>
                     <div class="videobox">
                       <div class="iframecontainer">
-                          <iframe src="https://abc30.com/video/embed/?pid=15432136" scrolling="no" frameborder="0"></iframe>
+                          <iframe id="abc-vid" src="https://abc30.com/video/embed/?pid=15432136" scrolling="no" frameborder="0"></iframe>
                       </div>
                   </div>
               <br><br>
@@ -554,7 +554,7 @@
                       <h4>Prop 6: Slavery</h4><br>
                       <div class="videobox">
                         <div class="iframecontainer">
-                            <iframe src="https://abc30.com/video/embed/?pid=15265112" scrolling="no" frameborder="0"></iframe>
+                            <iframe id="abc-vid" src="https://abc30.com/video/embed/?pid=15265112" scrolling="no" frameborder="0"></iframe>
                         </div>
                     </div>
                 <br><br>
@@ -619,7 +619,7 @@
                         <h4>Prop 32: Minimum Wage</h4><br>
                         <div class="videobox">
                           <div class="iframecontainer">
-                              <iframe src="https://abc30.com/video/embed/?pid=15406684" scrolling="no" frameborder="0"></iframe>
+                              <iframe id="abc-vid" src="https://abc30.com/video/embed/?pid=15406684" scrolling="no" frameborder="0"></iframe>
                           </div>
                       </div>
                   <br><br>
@@ -684,7 +684,7 @@
                           <h4>Prop 33: Rent Control</h4><br>
                           <div class="videobox">
                             <div class="iframecontainer">
-                                <iframe src="https://abc7.com/video/embed/?pid=15402388" scrolling="no" frameborder="0"></iframe>
+                                <iframe id="abc-vid" src="https://abc7.com/video/embed/?pid=15402388" scrolling="no" frameborder="0"></iframe>
                             </div>
                         </div>
                     <br><br>
@@ -749,7 +749,7 @@
                             <h4>Prop 34: Health Care Spending</h4><br>
                             <div class="videobox">
                               <div class="iframecontainer">
-                                  <iframe src="https://abc7.com/video/embed/?pid=15406294" scrolling="no" frameborder="0"></iframe>
+                                  <iframe id="abc-vid" src="https://abc7.com/video/embed/?pid=15406294" scrolling="no" frameborder="0"></iframe>
                               </div>
                           </div>
                       <br><br>
@@ -814,7 +814,7 @@
                               <h4>Prop 35: Health Care Tax</h4><br>
                               <div class="videobox">
                                 <div class="iframecontainer">
-                                    <iframe src="https://abc30.com/video/embed/?pid=15432996" scrolling="no" frameborder="0"></iframe>
+                                    <iframe id="abc-vid" src="https://abc30.com/video/embed/?pid=15432996" scrolling="no" frameborder="0"></iframe>
                                 </div>
                             </div>
                         <br><br>
@@ -879,7 +879,7 @@
                                 <h4>Prop 36: Crime Penalties</h4><br>
                                 <div class="videobox">
                                   <div class="iframecontainer">
-                                      <iframe src="https://abc30.com/video/embed/?pid=15300784" scrolling="no" frameborder="0"></iframe>
+                                      <iframe id="abc-vid" src="https://abc30.com/video/embed/?pid=15300784" scrolling="no" frameborder="0"></iframe>
                                   </div>
                               </div>
                           <br><br>
