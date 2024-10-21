@@ -40,7 +40,7 @@ $(document).ready(function() {
   }
 
   // Load US President Race data
-      loadCSV('Excel_Files/WABC_NY_Races/Presidential_Election_Race.csv', '#nav-us-president-table', updateImagesPresident);
+      loadCSV('Excel_Files/WABC_NY_Races/Presidential_Election_race.csv', '#nav-us-president-table', updateImagesPresident);
 
       // Load US Senate Race data
   $('#nav-us-senate-tab').click(function() {
