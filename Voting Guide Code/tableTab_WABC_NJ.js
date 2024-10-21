@@ -125,6 +125,9 @@ function updateSenateImage(row) {
     } else if (cellText === 'P') {
       img.attr('src', 'IMAGES/MOONEYHAM-01.png').attr('alt', 'Independent');
       partyName = ' Independent';
+    } else if (cellText === 'K') {
+      img.attr('src', 'IMAGES/KAPLAN-01.png').attr('alt', 'Libertarian');
+      partyName = ' Libertarian';
   }else {
       img.attr('src', 'IMAGES/DEFAULT-01.png').attr('alt', 'Unknown');
   }
