@@ -62,6 +62,12 @@
   text-overflow: ellipsis; /* Show ellipsis for overflowing text */
 }
 
+.dropdown-menu {
+  z-index: 9999;
+  position: absolute;
+  overflow: visible;
+}
+
 
 /*Responsiveness of the tables*/
 @media (max-width: 600px) {
