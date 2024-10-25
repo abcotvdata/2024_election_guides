@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
     // Function to load CSV data
     function loadCSV(url, tableId, updateImageFunction) {
@@ -62,14 +60,6 @@ $(document).ready(function() {
     loadCSV('Excel_Files/KGO_CC_Races/CA_Assembly_Race.csv', '#nav-ca-assembly-table', updateImagesCAAssembly);
 });
     
-     // Load Oakland Mayor Race data
-     $('#nav-oakland-mayor-tab').click(function() {
-        loadCSV('Excel_Files/KGO_Alameda_Races/Oakland_Mayor_Races.csv', '#nav-oakland-mayor-table');
-    });
-    // Load Alameda DA data
-    $('#nav-alameda-da-tab').click(function() {
-        loadCSV('Excel_Files/KGO_Alameda_Races/Alameda_DA_Races.csv', '#nav-alameda-da-table');
-    });
     // Load District 5 Supervisor Race data
    $('#nav-sup-dist-5-tab').click(function() {
         loadCSV('Excel_Files/KGO_Alameda_Races/Sup_Dist_5_Races.csv', '#nav-sup-dist-5-table');

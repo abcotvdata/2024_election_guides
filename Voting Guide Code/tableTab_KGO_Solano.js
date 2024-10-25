@@ -200,5 +200,4 @@ function updatePartyImage(row) {
     }
 
     firstCell.empty().append(img);
-}
-})
+}})
