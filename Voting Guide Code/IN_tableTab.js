@@ -42,7 +42,7 @@ $(document).ready(function() {
     // Load US President Race data
     //$('#nav-us-president-tab').tabs({ active: 1 });
    
-    loadCSV('Excel_Files/WLS_Chicago_Races/Presidential_Election_Race.csv', '#nav-us-president-table', updateImagesPresident);
+    loadCSV('Excel_Files/WLS_Indiana_Races/Presidential_Election_Race.csv', '#nav-us-president-table', updateImagesPresident);
 
      // Load US House Race data
      $('#nav-IN-house-tab').click(function() {
